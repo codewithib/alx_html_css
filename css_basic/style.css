@@ -1,24 +1,12 @@
-body, main {
+.header-container {
     display: flex;
-}
-
-body {
-    flex-direction: column;
-}
-
-main {
     flex-direction: row;
-    flex: auto;
+}
+.navbar-container, ul {
+    display: flex;
+    flex-direction: row;
 }
 
-article {
-    flex: 2;
-}
-
-aside {
-    flex: 1;
-}
-
-article, aside {
-    overflow-y: auto;
+.navbar-container ul li {
+    text-decoration: none;
 }
