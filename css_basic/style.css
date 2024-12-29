@@ -89,7 +89,7 @@ main {
     .col1-aside-items a {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 20px;
         text-decoration: none;
         transition: background-color 0.3s;
         color: inherit;
@@ -100,7 +100,6 @@ main {
         border-radius: 20px;
         color: #DB3E3E;
     }
-
 }
 
 
