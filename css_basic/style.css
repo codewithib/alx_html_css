@@ -72,36 +72,37 @@ main {
     flex: auto;
 }
 
-/* col1 aside styling starts here */
 
+/* Col1 aside wrapper styling starts here */
 .col1-aside-wrapper {
     display: flex;
-    flex: 2;
-    padding: 10px 20px;
-    border: 1px solid #000;
     flex-direction: column;
+    gap: 22px;
+    margin: 7px 5px;
+    flex: 3;
 
-    .col1-aside-content {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    .col1-aside-items {
+        padding: 10px 20px
     }
 
-    a {
+    .col1-aside-items a {
         display: flex;
-        gap: 15px;
         align-items: center;
+        gap: 15px;
         text-decoration: none;
-        color: inherit;
+        color: #555555;
+        transition: background-color 0.3s;
     }
 
-    a:hover {
-        background-color: rgba(255, 229, 236, 0.7);
-        border-radius: 5px;
-        color: red;
+    .col1-aside-items:hover {
+        background-color: #FDF7F7;
+        border-radius: 20px;
+        color: #DB3E3E;
     }
-
 }
+
+
+
 
 
 
@@ -110,11 +111,11 @@ main {
 .col2-aside-wrapper {
     border: 1px solid #000;
     overflow-y: auto;
-    flex: 3;
+    flex: 4;
 }
 
 .main-section-wrapper {
     border: 1px solid #000;
     overflow-y: auto;
-    flex: 5;
+    flex: 6;
 }
