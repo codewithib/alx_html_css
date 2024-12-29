@@ -190,22 +190,22 @@ main {
 }
 
 .list {
-    border: 1px solid rgba(0, 0, 0, 0.3);
+border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .list ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 .list ul li {
     gap: 15px;
     margin-left: -40px;
     display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    padding-left: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 12px;
 }
 .list ul li::before {
     content: '\2713';
@@ -217,9 +217,12 @@ main {
 /* Main section styling starts here */
 
 .main-section-wrapper {
-    border: 1px solid #000;
     overflow-y: auto;
-    flex: 6;
-    min-width: 300px; /* Prevents shrinking below 200px */
-    max-width: 100%; /* Prevents growth beyond 400px */
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-container {
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
