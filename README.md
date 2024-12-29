@@ -13,7 +13,7 @@ How to View the Project?
 
 Feel free to clone this branch to see the interface and review my code. Feedback and suggestions are always welcome!
 
-git clone https://github.com/codewithib/alx_html_css/new/alx-interface-replicate
+git clone --branch https://github.com/codewithib/alx_html_css.git
 
 Best regards,
 Ibrahim Yusuf
