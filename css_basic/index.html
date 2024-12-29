@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ALX Interface</title>
 </head>
 <body>
@@ -12,16 +13,115 @@
                 <img src="asset/home.svg" width="24" height="24">
             </div>
             <div class="logo">
-                <img src="asset/alx-icon.png" width="24" height="24">
+                <img src="asset/alx-icon.png" width="50" height="50">
             </div>
         </div>
     </header>
     <main>
-        <aside class="1st-aside">
-            <article>
-                
-            </article>
+        <!--Col1 aside wrapper starts here-->
+        <aside class="col1-aside-wrapper">
+            <div class="col1-aside-content">
+                <a href="#"><img src="asset/material-symbols--home.svg" width="24" height="24">Home</a>
+                <a href="#"><img src="asset/pajamas--planning.svg" width="24" height="24">Planning</a>
+                <a href="#"><img src="asset/la--project-diagram.svg" width="24" height="24">Projects</a>
+                <a href="#"><img src="asset/material-symbols--question-mark.svg" width="24" height="24">Quizz</a>
+            </div> 
         </aside>
+        <!--Col1 asside wrapper ends here-->
+
+        <!--Col2 aside wrapper starts here-->
+
+        <aside class="col2-aside-wrapper">
+            <article class="col2-aside-content">
+                <div class="col2-heading-1">
+                    <h1>Front-End Development</h1>
+                    <h4>Average: 80:0%</h4>
+                </div>
+                <div class="col2-heading-2">
+                    <p>Week 4</p>
+                </div>
+                <div class="list">
+                    <h3>CSS</h3>
+                    <ul>
+                        <li>Some pointers about CSS</li>
+                        <li>CSS fundamentals</li>
+                        <li>CSS, basic</li>
+                        <li>CSS advanced</li>
+                        <li>Responsive web design</li>
+                        <li>HTML advanced</li>
+                        <li>CSS, advanced</li>
+                    </ul>
+                </div>
+            </article>
+            <!--Col2 aside article wrapper ends here-->
+        </aside>
+
+        <!--Main section wrapper starts here-->
+
+        <section class="main-section-wrapper">
+            <article class="article-container">
+                <div class="content-1">
+                    <h1>CSS, basic</h1>
+                    <div class="novice">
+                        <img src="asset/akar-icons--arrow-back.svg" width="15" height="15">
+                        <p>Novice</p>
+                    </div>
+                    <div class="weight">
+                        <img src="asset/material-symbols--settings.svg" width="15" height="15">
+                        <p>Weight: 1</p>
+                    </div>
+                    <div class="project-ongoing">
+                        <img src="asset/la--project-diagram.svg" width="15" height="15">
+                        <p>Ongoing second chance project - started <span style="text-decoration: underline;">Dec 16, 2024 12:00 Am</span> must end by <span style="text-decoration: underline;">Dec 30, 2024 12:00 AM</span></p>
+                    </div>
+                    <div class="review">
+                        <img src="asset/bxs--file.svg" width="15" height="15">
+                        <p>Manual QA review was done by Sadia Gambo on <span style="text-decoration: underline;">Dec 27, 2024 1:19 PM</span></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-container">
+                <h3>In a nutshell...</h3>
+                <ul>
+                    <li><strong>Manual QA review: </strong>13.8/18 mandatory</li>
+                    <li><strong>Altogether: 76.67%</strong></li>
+                    <ul>
+                        <li>Mandatory</li>
+                        <li>Optional: no optional tasks</li>
+                    </ul>
+                </ul>
+                <p><strong>Overall comment:</strong></p>
+                <p>Good work, Keep practicing!</p>
+            </article>
+
+            <article class="article-container">
+                <iframe src="https://giphy.com/embed/YFkpsHWCsNUUo" width="280" height="237" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <h3>Resources</h3>
+                <p><strong>Read or watch</strong></p>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/What_is_CSS" target="_blank">What is CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started" target="_blank">Getting started with CSS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors" target="_blank">Basic CSS selectors</a></li>
+                    <li><a href="https://edu.gcfglobal.org/en/basic-css/" target="_blank">Basic CSS</a></li>
+                    <li><a href="https://learn.shayhowe.com/html-css/" target="_blank">Learn to Code HTML & CSS </a></li>
+                    <li><a href="https://css-tricks.com/specifics-on-css-specificity/" target="_blank">Specifics-on-css-Specificity</a></li>
+                    <li><a href="http://www.standardista.com/wp-content/uploads/2012/01/specificity3.pdf" target="_blank">CSS SpeciFishity</a></li>
+                </ul>
+                <h3>Learning Objectives</h3>
+                <p>At the end of this project, you are expected to be able to <a href="https://intranet.alxswe.com/rltoken/GfAlHDgrrZF5lp4hvf0ZQg" target="_blank">explain to anyone</a>, <strong>without the help of google</strong></p>
+                <h4>General</h4>
+                <ul>
+                    <li>What is CSS</li>
+                    <li>How to add style to an element</li>
+                    <li>What is a class</li>
+                    <li>What is a selector</li>
+                    <li>How to compute CSS Specificity Value</li>
+                    <li>What are Box properties in CSS</li>
+                    <li>How does the browser load a webpage</li>
+                </ul>
+            </article>
+        </section>
     </main>
 </body>
 </html>

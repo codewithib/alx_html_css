@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tweets Page</title>
-    <link href="base.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Full Block with Flexbox</title>
+  <style>
+    /* Flexbox Parent Container */
+    .flex-container {
+      display: flex;
+      flex-direction: column; /* Stack items vertically */
+      width: 300px; /* Set container width */
+    }
+
+    /* Flex Items */
+    .flex-item {
+      padding: 15px 20px; /* Add padding for spacing */
+      background-color: #f4f4f4; /* Default background color */
+      margin-bottom: 5px; /* Add spacing between items */
+      text-align: center; /* Center text */
+      transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .flex-item:hover {
+      background-color: #007BFF; /* Change background on hover */
+      color: #fff; /* Change text color on hover */
+    }
+
+    /* Optional: Styling Links */
+    .flex-item a {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit color from parent */
+      display: flex; /* Make the link behave as a block */
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="index.html" title="Click to go to homepage">Home</a></li>
-        </ul>
-    </header>
-    <main>
-        <article>
-            <div>
-                <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🚀🎉 I have successfully completed my onboarding into <a href="https://twitter.com/hashtag/ALX_FE?src=hash&amp;ref_src=twsrc%5Etfw">#ALX_FE</a>! 🔥💻 <a href="https://twitter.com/hashtag/ALX?src=hash&amp;ref_src=twsrc%5Etfw">#ALX</a> <a href="https://twitter.com/facesofalxse?ref_src=twsrc%5Etfw">@facesofalxse</a> 🙌🏽 Let&#39;s code and grow together! 💪🏽✨ <a href="https://t.co/7AmVhekpXy">pic.twitter.com/7AmVhekpXy</a></p>&mdash; Ibrahim Yusuf (@IB_codes) <a href="https://twitter.com/IB_codes/status/1860651275047632918?ref_src=twsrc%5Etfw">November 24, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-        </article>
-        <aside>
-            <p>placeholder to add comment thread later</p>
-        </aside>
-    </main>
-    <footer>
-        <p>Made by Ibrahim Yusuf - <a href="https://github.com/codewithib" target="_blank">here</a>
-    </footer>
+  <div class="flex-container">
+    <div class="flex-item"><a href="#">Home</a></div>
+    <div class="flex-item"><a href="#">About</a></div>
+    <div class="flex-item"><a href="#">Services</a></div>
+    <div class="flex-item"><a href="#">Contact</a></div>
+  </div>
 </body>
 </html>

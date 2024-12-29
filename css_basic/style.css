@@ -1,7 +1,3 @@
-/* Importing webfonts */
-
-@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
 
 /* CSS reset rules */
 
@@ -27,7 +23,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -47,18 +42,79 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+
+/* My own Styling */
+
+header {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px 20px;
+
+    .logo-container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
 }
 
-/* Fonts and Colors */
+body, main {
+    display: flex;
+}
 
 body {
-    font-family: 'Josefin Sans', serif;
-    color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6, header {
-	font-family: 'Yeseva One', sans-serif;
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+/* col1 aside styling starts here */
+
+.col1-aside-wrapper {
+    display: flex;
+    flex: 2;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    flex-direction: column;
+
+    .col1-aside-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    a {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    a:hover {
+        background-color: rgba(255, 229, 236, 0.7);
+        border-radius: 5px;
+        color: red;
+    }
+
+}
+
+
+
+
+
+.col2-aside-wrapper {
+    border: 1px solid #000;
+    overflow-y: auto;
+    flex: 3;
+}
+
+.main-section-wrapper {
+    border: 1px solid #000;
+    overflow-y: auto;
+    flex: 5;
 }
