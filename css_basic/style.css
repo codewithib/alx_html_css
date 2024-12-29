@@ -46,18 +46,25 @@ q:before, q:after {
 
 /* My own Styling */
 
-header {
-    display: flex;
-    align-items: center;
-    border: 1px solid #000;
-    padding: 10px 20px;
+/* Header styling starts here */
 
-    .logo-container {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;    
 }
+
+.logo-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+/*Header styling ends here */
 
 body, main {
     display: flex;
@@ -70,6 +77,7 @@ body {
 main {
     flex-direction: row;
     flex: auto;
+    margin-top: 100px;
 }
 
 
@@ -77,46 +85,135 @@ main {
 .col1-aside-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 22px;
-    margin: 7px 5px;
-    flex: 3;
-
-    .col1-aside-items {
-        padding: 10px 20px;
-        color: #646464;
-    }
-
-    .col1-aside-items a {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-        color: inherit;
-    }
-
-    .col1-aside-items:hover {
-        background-color: #FDF7F7;
-        border-radius: 20px;
-        color: #DB3E3E;
-    }
+    flex: 2;
+    position: fixed;
+    overflow-y: auto;
+    min-width: 220px; /* Prevents shrinking below 200px */
+    max-width: 220px; /* Prevents growth beyond 400px */
 }
 
+.col1-aside-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.col1-aside-items {
+    padding: 10px 20px;
+    color: #646464;
+}
+
+.col1-aside-items a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    color: inherit;
+}
+
+.col1-aside-items:hover {
+    background-color: #FDF7F7;
+    border-radius: 20px;
+    color: #DB3E3E;
+}
+
+.col1-aside-items-bottom {
+    padding: 10px 20px;
+    color: #646464;
+}
+
+.col1-aside-item-wrapper-bottom {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+}
+
+.col1-aside-items-bottom a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Col1 aside wrapper styling ends here */
 
 
-
-
-
-
+/* Col2 aside wrapper stylinh starts here */
 
 .col2-aside-wrapper {
-    border: 1px solid #000;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
     overflow-y: auto;
-    flex: 4;
+    flex: 4; /* Flexible but respects content size */
+    min-width: 200px; /* Prevents shrinking below 200px */
+    max-width: 300px; /* Prevents growth beyond 400px */
+    margin-left: 220px;
+    margin-top: -10px;
+    flex-direction: column;
+
 }
+
+.col2-aside-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 20px;
+    color: #646464;
+}
+
+.col2-heading-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.col2-heading-2 {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 6px 10px;
+}
+
+.col2-heading-3 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 6px 10px;
+    background-color: #F5F5F5;
+}
+
+.list ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    padding: 10px 20px;
+}
+
+.list ul li {
+    gap: 15px;
+    display: flex;
+}
+.list ul li::before {
+    content: '\2713';
+    color: #000;
+}
+
+/* Col2 aside wrapper styling ends here */
+
+/* Main section styling starts here */
 
 .main-section-wrapper {
     border: 1px solid #000;
     overflow-y: auto;
     flex: 6;
+    min-width: 300px; /* Prevents shrinking below 200px */
+    max-width: 100%; /* Prevents growth beyond 400px */
 }
