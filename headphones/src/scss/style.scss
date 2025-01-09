@@ -1,14 +1,14 @@
 /* importing my fonts starts here */
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url(../fonts/SourceSansPro-Bold.otf);
+    src: url(../../src/fonts/SourceSansPro-Bold.otf);
     font-weight: bold;
 }
 
 
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url(../fonts/SourceSansPro-Regular.otf);
+    src: url(../../src/fonts/SourceSansPro-Regular.otf);
     font-weight: 400;
 }
 /* importing my fonts ends here */
@@ -245,4 +245,3 @@ header {
         font-weight: 400;
     }
 }
-
