@@ -39,8 +39,6 @@ body {
 .container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
-    overflow: hidden;
 }
 
 a {
@@ -148,7 +146,7 @@ header {
     position: relative;
     color: #FFFFFF;
     max-width: 1440px;
-    margin: 0 auto;
+    
 }
 
 .hero-container {
@@ -162,6 +160,8 @@ header {
     margin-top: 100px;
     margin-bottom: 70px;
     height: 100vh;
+
+    
 }
 
 .hero-container .top {
