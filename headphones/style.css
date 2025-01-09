@@ -1,0 +1,28 @@
+/* importing my fonts starts here */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(fonts/SourceSansPro-Bold.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(fonts/SourceSansPro-Regular.otf);
+    font-weight: 400;
+}
+/* importing my fonts ends here */
+
+/* Adding my fonts and colors to CSS variables starts here */
+:root {
+    --btn-color: #FF6565;
+    --polygon-color: #FF6565;
+    --footer-bg-color: #071629;
+    --font-bold: 'Source Sans Pro', sans-serif;
+    --font-color-white: #ffffff;
+    --font-color-black: #000000;
+}
+/* Adding my fonts and colors to CSS variables ends here */
+
+/* General Reset to my CSS starts here */
+
+/* General Reset to my CSS endss here */
