@@ -31,11 +31,9 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-*, *::before, *::after {
     box-sizing: border-box;
 }
+
 
 img, svg {
     display: block;
@@ -43,7 +41,6 @@ img, svg {
 }
 
 html, body {
-    height: 100%;
     font-family: var(--font);
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -57,10 +54,10 @@ button {
 }
 
 .wrapper {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    width: 95%;
-    border: 1px solid #000;
+    width: 100%;
+    padding: 0 20px;
 }
 
 /* General Reset to my CSS ends here */
@@ -90,30 +87,25 @@ header {
 }
 
 /* Styling of navbar stars here */
-.nav-hero-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-hero-container nav {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px; 
 }
 
-.nav-hero-container nav .logo img {
+
+nav .logo img {
     width: 180px;
     height: auto;
 }
 
-.nav-hero-container nav ul {
+nav ul {
     display: flex;
     list-style-type: none;
-    gap: 41px;
+    gap: 2rem;
 }
 
-.nav-hero-container nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
     transition: background-color 0.3s;
@@ -121,7 +113,7 @@ header {
     border-radius: 10px; 
 }
 
-.nav-hero-container nav ul li a:hover {
+nav ul li a:hover {
     background-color: var(--btn-color);
     color: #fff;
     font-weight: normal;
@@ -137,7 +129,7 @@ header {
     align-items: center;
     color: var(--font-color-white);
     text-align: center;
-    padding: 300px 30px 115px 30px;
+    padding: 120px 0 60px;
 }
 .hero h1 {
     font-weight: var(--font-bold);
@@ -151,14 +143,15 @@ header {
 
 .hero .btn {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .hero .text-content {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
-    width: 637px;
+    max-width: 637px;
+    width: 100%;
 }
 /* Header section styling ends here */
 
@@ -205,7 +198,7 @@ header {
 .our-result-section {
     display: flex; 
     flex-direction: column;
-    background: url(../../src/asset/headphones_hero_2.jpg) center center/cover;
+    background: url(../../src/asset/headphones_hero_2.jpg) no-repeat center center/cover;
     color: var(--font-color-white);
 }
 
@@ -222,6 +215,9 @@ header {
 .our-result-section .bottom-row-wrapper {
     display: flex;
     gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .our-result-section .bottom-row-wrapper .polygon-container {
@@ -233,15 +229,47 @@ header {
     justify-content: center; 
     align-items: center;
     text-align: center;
-    padding: 0 40px;
+    padding: 0 30px;
     margin: 0 10px;
 
     .figure-text {
-        font-size: 46px;
+        font-size: 36px;
         font-weight: 700;
     }
     p {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .what-we-do-section .bottom-row-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our-result-section .top {
+        padding: 100px 20px 30px 20px;
+    }
+
+    .what-we-do-section .top {
+        padding: 60px 20px 40px 20px;
+    }
+
+    .hero .text-content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
