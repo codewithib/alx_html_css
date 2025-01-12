@@ -54,6 +54,7 @@ button {
     background: none;
     cursor: pointer;
     padding: 0;
+    border: none;
 }
 
 .container {
@@ -76,6 +77,7 @@ button {
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
     text-align: center;
     display: inline-block;
+    border: none;
 }
 
 .btn:hover {
@@ -105,6 +107,7 @@ header {
         display: flex;
         list-style-type: none;
         gap: 2rem;
+        align-items: center;
     }
 
     nav ul li a {
@@ -112,6 +115,24 @@ header {
         color: inherit;
         font-weight: 700;
         font-size: 0.9rem;
+    }
+
+    nav .btn-nav {
+        background: var(--btn-color);
+        padding: 0.5rem 1.3rem;
+        border-radius: 2rem;
+        color: var(--font-color-white);
+        text-decoration: none;
+        font-weight: 700;
+        box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.50);
+        text-align: center;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav .btn-nav:hover {
+        background-color: #000;
     }
 
     .hero {
@@ -153,35 +174,37 @@ header {
 .what-we-do {
 padding: 10rem 0 5rem;
 
-.top-txt {
-    text-align: center;
-    color: var(--font-color-black);
-    max-width: 58rem;
-    margin: 0 auto 5rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 2;
-}
-
-.row-card-wrapper {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-
-    .card-container {
-        display: flex;
-        flex-direction: column;
+    .top-txt {
         text-align: center;
-        align-items: center;
-        font-size: 0.9rem;
-        gap: 3.5rem;
-        max-width: 13rem;
+        color: var(--font-color-black);
+        max-width: 58rem;
+        margin: 0 auto 5rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 2;
     }
 
-    .card-container svg {
-        height: 4rem;
+    .row-card-wrapper {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            font-size: 0.9rem;
+            gap: 3.5rem;
+            max-width: 13rem;
+            flex: 1 1 calc(25% - 3rem);
+        }
+
+        .card-container svg {
+            height: 4rem;
+        }
     }
-}
 
 }
 /* What we do section styling ends here */
@@ -194,61 +217,221 @@ padding: 10rem 0 5rem;
     background-size: cover;
     padding: 10rem 0 5rem;
 
-    .top-txt {
-        text-align: center;
-        color: var(--font-color-white);
-        font-size: 1rem;
-        font-weight: 400;
-        max-width: 58rem;
-        margin: 0 auto 2.5rem;
-        line-height: 2;
-    }
-    .polygons-row-wrapper {
-        display: flex;
-        justify-content: center;
-        gap: 4rem;
-    }
-    .polygon-box{
-        display: flex;
-        width: 180px;
-        height: 180px;
-        background-image: url(../../src/asset/Polygon.svg);
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .polygon-box .polygon-content {
-        text-align: center;
-        color: var(--font-color-white);
-        padding: 0 1rem;
-
-        .number {
-            font-weight: 700;
-            font-size: 2rem;
-            margin-bottom: 0.2rem;
-            margin-top: 0.5rem;
-        }
-
-        .txt {
+        .top-txt {
+            text-align: center;
+            color: var(--font-color-white);
+            font-size: 1rem;
             font-weight: 400;
-            font-size: 0.89rem;
+            max-width: 58rem;
+            margin: 0 auto 2.5rem;
+            line-height: 2;
         }
-    }
+        .polygons-row-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+        .polygon-box{
+            display: flex;
+            width: 180px;
+            height: 180px;
+            background-image: url(../../src/asset/Polygon.svg);
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 calc(25% - 4rem);
+        }
+
+        .polygon-box .polygon-content {
+            text-align: center;
+            color: var(--font-color-white);
+            padding: 0 1rem;
+
+            .number {
+                font-weight: 700;
+                font-size: 2rem;
+                margin-bottom: 0.2rem;
+                margin-top: 0.5rem;
+            }
+
+            .txt {
+                font-weight: 400;
+                font-size: 0.89rem;
+            }
+        }
     
 }
-
 /* Our result section styling ends here */
+
+/* Contact us stylinhg starts here */
+
+.contact-us {
+    padding: 4rem 0 2rem;
+    
+    .contact-form {
+        max-width: 42rem;
+        margin: 0 auto;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 3rem;
+
+        .form-group {
+            margin-bottom: 1.5rem;
+
+            input, textarea {
+                width: 100%;
+                padding: 1rem;
+                border: 1px solid #ddd;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+                color: var(--font-color-black);
+                transition: border-color 0.3s;
+            }
+
+            input:focus,
+            textarea:focus {
+                outline: none;
+                border-color: #007bff;
+                box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+                transform: translateX(-1.5rem);
+            }
+
+            textarea:focus {
+                border-width: 2px;
+            }
+
+            textarea {
+                min-height: 8rem;
+                resize: vertical;
+            }
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--font-color-black);
+
+        }
+
+        .btn-form {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+            box-shadow: none;
+        }
+    }
+}
+
+/* Footer section styling starts here */
+.footer-section {
+    padding: 6rem 0 2.5rem;
+    background: #071629;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .row .left img {
+        width: 12rem;
+    }
+
+    .row .right {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .row .right img {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
+    }
+
+    .footer-txt-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+
+        .footer-txt {
+            color: var(--font-color-white);
+            font-size: 1rem;
+            font-weight: 400;
+            opacity: 0.3517;
+        }
+
+        .flex-icon {
+            fill: #ffffff;
+            min-width: 1.5rem;
+            opacity: 0.6;
+        }
+           
+    }
+}
+/* Footer section styling ends here */
+
 
 /* Media Queries starts here */
 
+
+/* Tablet Media Quuery starts here */
 @media (max-width: 768px) {
-    .what-we-do .top-txt {
-        padding: 0 4rem;
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        width: 90%;
+        padding: 0 10px;
+    }
+
+}
+/* Header styling starts here */
+header {
+    min-height: 100vh;
+
+    nav .logo {
+        width: 11rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
     }
 }
+/* Header styling end here */
+
+/* What we do section styling starts here */
+.what-we-do {
+
+  .row-card-wrapper .card-container {
+    flex: 1 1 calc(50% - 3rem);
+  }
+}
+/* What we do section styling starts here */
+
+/* Our result section styling starts here */
+.our-result {
+    
+    .polygons-row-wrapper .polygon-box {
+        flex: 1 1 calc(50% - 4rem);
+    }
+}
+
+
+/* Our result section styling ends here */
+
+
+
+
+/* Tablet Media Quuery ends here */
+
+
+
 
 /* Media Queries end here */
 
