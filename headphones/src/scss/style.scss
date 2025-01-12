@@ -43,10 +43,12 @@ img, svg {
 
 html, body {
     font-family: var(--font), sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
 
 button {
     background: none;
@@ -55,9 +57,9 @@ button {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
     padding: 0 20px;
 }
 
@@ -113,29 +115,33 @@ header {
     }
 
     .hero {
-        padding: 10rem 0 5rem;
+        padding: 15rem 0 5rem;
         text-align: center;
     }
 
     .hero h1 {
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 2.7rem;
+        max-width: 49rem;
+        margin: 0 auto;
     }
 
     .hero .short-txt {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 700;
         margin-bottom: 3rem;
     }
 
     .hero .bottom-txt {
-        font-size: 1.18rem;
+        font-size: 1rem;
         font-weight: 400;
-        line-height: 1.9;
+        line-height: 2;
+        max-width: 58rem;
+        margin: 0 auto;
     }
 
     .hero .btn-hero {
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -146,18 +152,20 @@ header {
 
 .what-we-do {
 padding: 10rem 0 5rem;
-border: 1px solid #000;
 
 .top-txt {
     text-align: center;
     color: var(--font-color-black);
-    padding: 0 10rem;
-    margin-bottom: 5rem;
+    max-width: 58rem;
+    margin: 0 auto 5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
 }
 
 .row-card-wrapper {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     justify-content: center;
 
     .card-container {
@@ -167,6 +175,7 @@ border: 1px solid #000;
         align-items: center;
         font-size: 0.9rem;
         gap: 3.5rem;
+        max-width: 13rem;
     }
 
     .card-container svg {
@@ -175,7 +184,63 @@ border: 1px solid #000;
 }
 
 }
+/* What we do section styling ends here */
 
+/* Our result section styling starts here */
+.our-result {
+    background-image: url(../../src/asset/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10rem 0 5rem;
+
+    .top-txt {
+        text-align: center;
+        color: var(--font-color-white);
+        font-size: 1rem;
+        font-weight: 400;
+        max-width: 58rem;
+        margin: 0 auto 2.5rem;
+        line-height: 2;
+    }
+    .polygons-row-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .polygon-box{
+        display: flex;
+        width: 180px;
+        height: 180px;
+        background-image: url(../../src/asset/Polygon.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .polygon-box .polygon-content {
+        text-align: center;
+        color: var(--font-color-white);
+        padding: 0 1rem;
+
+        .number {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .txt {
+            font-weight: 400;
+            font-size: 0.89rem;
+        }
+    }
+    
+}
+
+/* Our result section styling ends here */
 
 /* Media Queries starts here */
 
@@ -184,4 +249,6 @@ border: 1px solid #000;
         padding: 0 4rem;
     }
 }
-/* What we do section styling ends here */
+
+/* Media Queries end here */
+
