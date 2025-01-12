@@ -159,8 +159,6 @@ border: 1px solid #000;
     display: flex;
     gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
-    background-color: red;
 
     .card-container {
         display: flex;
@@ -177,6 +175,9 @@ border: 1px solid #000;
 }
 
 }
+
+
+/* Media Queries starts here */
 
 @media (max-width: 768px) {
     .what-we-do .top-txt {
