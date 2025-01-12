@@ -234,8 +234,8 @@ padding: 10rem 0 5rem;
         }
         .polygon-box{
             display: flex;
-            width: 180px;
-            height: 180px;
+            max-width: 12rem;
+            min-height: 12rem;
             background-image: url(../../src/asset/Polygon.svg);
             background-position: center;
             background-size: contain;
@@ -390,8 +390,11 @@ padding: 10rem 0 5rem;
         padding: 0 10px;
     }
 
-}
-/* Header styling starts here */
+    .btn {
+        padding: 0.7rem 1.5rem;
+    }
+
+    /* Header styling starts here */
 header {
     min-height: 100vh;
 
@@ -422,12 +425,50 @@ header {
     }
 }
 
-
 /* Our result section styling ends here */
 
+/* Contact form styling starts here */
+.contact-us {
 
+    .contact-form {
+        padding: 2rem;
 
+        .form-group input, textarea {
+            padding: 0.75rem;
+        }
 
+        .btn-form {
+            padding: 0.75rem;
+        }
+    }
+}
+/* Contact form styling ends here */
+
+/* Footer section styling starts here */
+
+.footer-section {
+
+    .row .left img {
+        max-width: 11rem;
+    }
+
+    .row .right img {
+        width: 1.85rem;
+        min-height: 1.85rem;
+    }
+
+    .footer-txt-container .footer-txt {
+        font-size: 0.9rem;
+    }
+
+    .footer-txt-container .flex-icon {
+        min-width: 1.3rem;
+    }
+}
+
+/* Footer section styling ends here */
+
+}
 /* Tablet Media Quuery ends here */
 
 
