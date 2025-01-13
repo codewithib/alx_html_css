@@ -1,14 +1,14 @@
 /* importing my fonts starts here */
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url(../../src/fonts/SourceSansPro-Bold.otf);
+    src: url(fonts/SourceSansPro-Bold.otf);
     font-weight: bold;
 }
 
 
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url(../../src/fonts/SourceSansPro-Regular.otf);
+    src: url(fonts/SourceSansPro-Regular.otf);
     font-weight: 400;
 }
 /* importing my fonts ends here */
@@ -87,7 +87,7 @@ button {
 
 /* Header section styling starts here */
 header {
-    background: url(../../src/asset/headphones_hero_1.jpg) no-repeat center center/cover;
+    background: url(asset/headphones_hero_1.jpg) no-repeat center center/cover;
     min-height: 100vh;
     color: #ffffff;
 
@@ -237,7 +237,7 @@ padding: 10rem 0 5rem;
 
 /* Our result section styling starts here */
 .our-result {
-    background-image: url(../../src/asset/headphones_hero_2.jpg);
+    background-image: url(asset/headphones_hero_2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -262,7 +262,7 @@ padding: 10rem 0 5rem;
             display: flex;
             max-width: 12rem;
             min-height: 12rem;
-            background-image: url(../../src/asset/Polygon.svg);
+            background-image: url(asset/Polygon.svg);
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
