@@ -618,6 +618,15 @@ header {
         .footer-txt-container .flex-icon {
             min-width: 1.15rem;
         }
+
+        .row {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .footer-txt-container {
+            flex-direction: column;
+        }
     }
 }
 /* Mobile Media Query ends here */
