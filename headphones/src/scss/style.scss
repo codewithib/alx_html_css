@@ -594,6 +594,11 @@ header {
         .btn-form {
             padding: 0.6rem;
         }
+
+        .contact-form .form-group input:focus,
+        textarea:focus {
+            transform: translateX(-1rem);
+        }
     }
 
     .footer-section {
@@ -615,10 +620,7 @@ header {
         }
     }
 }
-
 /* Mobile Media Query ends here */
-
-
 
 
 /* Media Queries end here */
